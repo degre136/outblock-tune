@@ -17,6 +17,8 @@ juce_add_plugin(OutblockTune
     COPY_PLUGIN_AFTER_BUILD FALSE
 )
 
+juce_generate_juce_header(OutblockTune)
+
 target_sources(OutblockTune PRIVATE
     Source/PluginProcessor.cpp
     Source/PluginProcessor.h
